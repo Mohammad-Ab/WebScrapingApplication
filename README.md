@@ -1,5 +1,5 @@
 # WebScrapingApplication
 
-# a Web Scraping Application Use Refinitiv WebSite.
+a Web Scraping Application Use Refinitiv WebSite.
 
-# In Progress
+In Progress...
