@@ -4,7 +4,7 @@ from .models import Corporation,EsgScore
 class EsgScoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = EsgScore
-        exclude =['total_corporations']
+        exclude =['total_industries']
 
     corporation = serializers.StringRelatedField()
     rank = serializers.SerializerMethodField(method_name='rank_out_of')
