@@ -20,7 +20,7 @@ class Corporation(models.Model):
 
 class EsgScore(models.Model):
     rank = models.IntegerField()
-    total_corporations = models.IntegerField(validators=[MinValueValidator(0)])
+    total_industries = models.IntegerField(validators=[MinValueValidator(0)])
     esg_score = models.IntegerField()
     environment_pillar = models.IntegerField()
     social_pillar = models.IntegerField()
