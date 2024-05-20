@@ -1,13 +1,12 @@
 from django_filters.rest_framework import FilterSet
-from .models import Corporation, EsgScore
+from .models import Corporation
 
 
-class EsgScoreFilter(FilterSet):
+class EsgFilter(FilterSet):
     class Meta:
-        model = EsgScore
+        model = Corporation
         fields = {
             'esg_score': ['exact', 'gt', 'lt'],
             'rank': ['exact', 'gt', 'lt'],
-            'corporation__ticker': ['exact'],
         }
 

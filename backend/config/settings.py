@@ -150,3 +150,13 @@ CACHES = {
         },
     }
 }
+
+
+REST_FRAMEWORK = {
+            'DEFAULT_PERMISSION_CLASSES': [
+                    'api.permissions.IsSuperUserOrStaffReadOnly',
+                ],
+            'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+            'PAGE_SIZE': 100,
+        }
+
